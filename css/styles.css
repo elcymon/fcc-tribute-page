@@ -1,0 +1,75 @@
+body {
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    line-height: 2em;
+}
+#title {
+    grid-area: header;
+}
+#img-div {
+    grid-area: banner;
+}
+#sub-head {
+    grid-area: sub-head;
+}
+#summary {
+    grid-area: summary;
+}
+#life-highlights {
+    grid-area: life-highlights;
+}
+#booth-gallery-1 {
+    grid-area: booth-gallery-1;
+}
+#booth-gallery-2 {
+    grid-area: booth-gallery-2;
+}
+.booth-gallery{
+    width: 50%;
+}
+#sub-footer {
+    grid-area: sub-footer;
+}
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.centered-text {
+    /* display: block; */
+    /* margin: auto; */
+    text-align: center;
+    /* background-color: #eee; */
+    width:auto;
+}
+#tribute-info {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "sub-head sub-head"
+    "summary summary"
+    "life-highlights booth-gallery-1"
+    "life-highlights booth-gallery-2"
+    "sub-footer sub-footer"
+}
+#main{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header"
+        "banner"
+        "main"
+        "footer";
+    justify-content: center;
+    align-content: center;
+    border-radius: 3%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    max-width: 90%;
+    background-color: white;
+}
